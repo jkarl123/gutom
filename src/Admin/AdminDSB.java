@@ -17,7 +17,6 @@ public class AdminDSB extends javax.swing.JFrame {
      DefaultTableModel table;
     public AdminDSB() {
         initComponents();
-        initComponents();
         table = (DefaultTableModel) tables.getModel();
         LoginDSB.showTable(table);
     }
@@ -36,13 +35,10 @@ public class AdminDSB extends javax.swing.JFrame {
 
         tables.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "Email", "Contact", "User", "Pass", "Status"
             }
         ));
         jScrollPane1.setViewportView(tables);
